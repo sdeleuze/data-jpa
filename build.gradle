@@ -1,0 +1,32 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.0.0-SNAPSHOT'
+	id 'org.graalvm.buildtools.native' version '0.9.14'
+	id "org.hibernate.orm" version '6.1.4.Final'
+}
+
+repositories {
+  mavenCentral()
+  maven { url 'https://repo.spring.io/milestone' }
+  maven { url 'https://repo.spring.io/snapshot' }
+}
+
+dependencies {
+	implementation(platform(org.springframework.boot.gradle.plugin.SpringBootPlugin.BOM_COORDINATES))
+	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+	runtimeOnly("com.h2database:h2")
+
+	testImplementation("org.springframework.boot:spring-boot-starter-test")
+}
+
+tasks.named('test') {
+  useJUnitPlatform()
+}
+
+hibernate {
+  enhancement {
+      lazyInitialization true
+      dirtyTracking true
+      associationManagement true
+  }
+}
