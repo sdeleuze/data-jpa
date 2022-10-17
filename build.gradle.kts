@@ -2,6 +2,7 @@
 plugins {
 	java
 	id("org.springframework.boot") version "3.0.0-SNAPSHOT"
+	id("org.graalvm.buildtools.native") version "0.9.14"
 	id("org.hibernate.orm") version "6.1.4.Final"
 }
 
