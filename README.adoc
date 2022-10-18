@@ -1,4 +1,4 @@
 Tests if Spring Data JPA works with enhancer plugin
 
-Works with Maven when running `mvn clean package -Pnative`.
-Fails with Gradle when running `./gradlew nativeCompile`.
+Works with Maven when running `mvn clean package`.
+Fails with Gradle when running `./gradlew compileJava`.
