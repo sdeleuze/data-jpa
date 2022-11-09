@@ -1,9 +1,10 @@
 Tests if Spring Data JPA works with enhancer plugin
 
-With Maven `mvn -Pnative clean native:compile`.
-With Gradle Groovy DSL  `./gradlew nativeCompile`.
-With Gradle KotlinDSL  `./gradlew -b build.gradle.kts nativeCompile`.
+- With Maven `mvn -Pnative clean native:compile`.
+- With Gradle Groovy DSL  `./gradlew nativeCompile`.
+- With Gradle KotlinDSL  `./gradlew -b build.gradle.kts nativeCompile`.
 
 Related issues:
+
  - Add missing setters for associationManagement and extendedEnhancement in EnhancementSpec https://hibernate.atlassian.net/browse/HHH-15601
  - Enable inlineDirtyChecking and lazyLoading for enhancement https://hibernate.atlassian.net/browse/HHH-15641
