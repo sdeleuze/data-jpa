@@ -1,7 +1,7 @@
 plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.0.0-SNAPSHOT'
-	id "org.hibernate.orm" version '6.1.4.Final'
+	id "org.hibernate.orm" version '6.1.5.Final'
 }
 
 repositories {
